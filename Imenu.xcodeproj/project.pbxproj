@@ -14,6 +14,10 @@
 		55D386892989EC2A003A9D1F /* ImenuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D386882989EC2A003A9D1F /* ImenuTests.swift */; };
 		55D386932989EC2A003A9D1F /* ImenuUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D386922989EC2A003A9D1F /* ImenuUITests.swift */; };
 		55D386952989EC2A003A9D1F /* ImenuUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D386942989EC2A003A9D1F /* ImenuUITestsLaunchTests.swift */; };
+		55D386A22989F09B003A9D1F /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D386A12989F09B003A9D1F /* Helper.swift */; };
+		55D386A52989F131003A9D1F /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D386A32989F131003A9D1F /* Order.swift */; };
+		55D386A62989F131003A9D1F /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D386A42989F131003A9D1F /* Menu.swift */; };
+		55D386A82989F143003A9D1F /* menu.json in Resources */ = {isa = PBXBuildFile; fileRef = 55D386A72989F143003A9D1F /* menu.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +48,10 @@
 		55D3868E2989EC2A003A9D1F /* ImenuUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImenuUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		55D386922989EC2A003A9D1F /* ImenuUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImenuUITests.swift; sourceTree = "<group>"; };
 		55D386942989EC2A003A9D1F /* ImenuUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImenuUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		55D386A12989F09B003A9D1F /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Helper.swift; path = ../../../../../Downloads/idine/Helper.swift; sourceTree = "<group>"; };
+		55D386A32989F131003A9D1F /* Order.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Order.swift; path = ../../../../../Downloads/idine/Order.swift; sourceTree = "<group>"; };
+		55D386A42989F131003A9D1F /* Menu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Menu.swift; path = ../../../../../Downloads/idine/Menu.swift; sourceTree = "<group>"; };
+		55D386A72989F143003A9D1F /* menu.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = menu.json; path = ../../../../../Downloads/idine/menu.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,7 +104,11 @@
 			children = (
 				55D386772989EC29003A9D1F /* ImenuApp.swift */,
 				55D386792989EC29003A9D1F /* ContentView.swift */,
+				55D386A12989F09B003A9D1F /* Helper.swift */,
+				55D386A42989F131003A9D1F /* Menu.swift */,
+				55D386A32989F131003A9D1F /* Order.swift */,
 				55D3867B2989EC2A003A9D1F /* Assets.xcassets */,
+				55D386A72989F143003A9D1F /* menu.json */,
 				55D3867D2989EC2A003A9D1F /* Preview Content */,
 			);
 			path = Imenu;
@@ -231,6 +243,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55D386A82989F143003A9D1F /* menu.json in Resources */,
 				55D3867F2989EC2A003A9D1F /* Preview Assets.xcassets in Resources */,
 				55D3867C2989EC2A003A9D1F /* Assets.xcassets in Resources */,
 			);
@@ -259,6 +272,9 @@
 			files = (
 				55D3867A2989EC29003A9D1F /* ContentView.swift in Sources */,
 				55D386782989EC29003A9D1F /* ImenuApp.swift in Sources */,
+				55D386A52989F131003A9D1F /* Order.swift in Sources */,
+				55D386A22989F09B003A9D1F /* Helper.swift in Sources */,
+				55D386A62989F131003A9D1F /* Menu.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
