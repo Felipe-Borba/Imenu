@@ -16,14 +16,16 @@ struct OrderView: View {
             List {
                 Section {
                     ForEach(order.items) { item in
-                        Text(item.name)
-                        Spacer()
-                        Text("$\(item.price)")
+                        HStack {
+                            Text(item.name)
+                            Spacer()
+                            Text("$\(item.price)")
+                        }
                     }
                 }
                 
                 Section {
-                    NavigationLink("place Order") {
+                    NavigationLink("Place Order") {
                         Text("Check out")
                     }
                 }
