@@ -1,0 +1,41 @@
+//
+//  OrderView.swift
+//  Imenu
+//
+//  Created by Felipe Silva de Borba on 02/02/23.
+//
+
+import SwiftUI
+
+struct OrderView: View {
+    
+    @EnvironmentObject var order: Order
+    
+    var body: some View {
+        NavigationStack {
+            List {
+                Section {
+                    ForEach(order.items) { item in
+                        Text(item.name)
+                        Spacer()
+                        Text("$\(item.price)")
+                    }
+                }
+                
+                Section {
+                    NavigationLink("place Order") {
+                        Text("Check out")
+                    }
+                }
+            }
+            .navigationTitle("Order")
+        }
+    }
+}
+
+struct OrderView_Previews: PreviewProvider {
+    static var previews: some View {
+        OrderView()
+            .environmentObject(Order())
+    }
+}
